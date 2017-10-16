@@ -83,6 +83,8 @@ section {
 }
 .box {
   margin-bottom: 30px;
+  /* width:150px;
+  height: 90px; */
 }
 .content {
   position: relative;
