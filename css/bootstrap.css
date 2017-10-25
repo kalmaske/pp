@@ -6350,3 +6350,28 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+@media screen and (max-width: 640px){   
+  iframe{
+    text-align: center;
+    vertical-align: middle;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px){   
+  iframe{
+    text-align: center;
+    vertical-align: middle;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width:980px) {   
+  iframe{
+    text-align: center;
+    vertical-align: middle;
+    width: 75%;
+  }
+}
