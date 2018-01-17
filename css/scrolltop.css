@@ -1,0 +1,43 @@
+﻿@media (max-width: 767px) {
+.scroll-top {
+  position: fixed;
+  z-index: 1049;
+  right: 2%;
+  bottom: 2%;
+  width: 50px;
+  height: 50px; }
+  .scroll-top .btn {
+    font-size: 16px;
+    line-height: 28px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%; }
+    .scroll-top .btn:focus {
+      outline: none; }
+}
+@media (max-width: 414px){
+  .start{
+    display: none;
+  }
+}
+
+
+.start{
+  width: 80%;
+  height: 70px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.2;
+  filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
+.start:hover{
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}

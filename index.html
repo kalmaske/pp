@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Khadija Almaskeen's portfolio!!!!</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap and Font Awesome css-->
     <!-- we use cdn but you can also include local files located in css directory-->
@@ -14,22 +15,23 @@
 
     <!-- ViewerJS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/0.8.0/viewer.common.js">
-    
+
     <!-- Google fonts - Montserrat for headings, Cardo for copy-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/style.default.min.css" id="theme-stylesheet">
     <!-- ekko lightbox-->
     <link rel="stylesheet" href="css/ekko-lightbox.css">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/scrolltop.css" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png">
 
   </head>
-  <body data-spy="scroll" data-target="#navigation" data-offset="120">
+  <body data-spy="scroll" data-target=".navbar" data-offset="120"  id="page-top">
     <!-- intro-->
-    <section id="intro" style="background-image: url('img/ein-steig.jpg');" class="intro">      
+    <section id="intro" style="background-image: url('img/ein-steig.jpg');" class="intro">
       <div class="overlay"></div>
       <div class="content">
         <div class="container clearfix">
@@ -37,17 +39,19 @@
             <div class="col-md-8 col-md-offset-2 col-sm-12">
               <p class="italic">Khadija Almaskeen's portfolio!!!!</p>
               <h1>Khadija is ..</h1>
-              <p class="italic">A life-long seeker of knowledge and a full stack web developer with a Bachelor of Science in Computer Science who has her sight on a full-time web 
+              <p class="italic">A life-long seeker of knowledge and a full stack web developer with a Bachelor of Science in Computer Science who has her sight on a full-time web
                 development position using JavaScript core languages in addition to their different framework.
                  </p>
 
 
-                 <a href="https://github.com/kalmaske" title="" class="github" target="_blank"><i class="fa fa-github-square fa-5x" aria-hidden="true"></i> 
+                 <a href="https://github.com/kalmaske" title="" class="github" target="_blank"><i class="fa fa-github-square fa-5x" aria-hidden="true"></i>
                  <a href="https://www.linkedin.com/in/khadija-almaskeen/" title="" class="linkedin" target="_blank"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
-                  
+
             </div>
           </div>
         </div>
+                  <div class="start"><a href="#about" class="btn btn-default form-control" style="height: 100%;font-size: 52px;"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></div>
+
       </div>
     </section>
     <!-- intro end-->
@@ -60,7 +64,7 @@
               <br>
               <p>Khadija Ali</p>
             </div>
-            <div id="navigation" class="collapse navbar-collapse navbar-right">
+            <div id="navigations" class="collapse navbar-collapse navbar-right">
               <ul class="nav navbar-nav">
                 <li class="#home"><a href="#intro">Home</a></li>
                 <li><a href="#about">About </a></li>
@@ -90,11 +94,11 @@
           <hr>
         </div>
       </div>
-      
+
     </section>
     <!-- about end-->
-    
-    
+
+
     <!-- projects / gallery-->
     <section id="projects" class="gallery" style="background-color: #eee">
       <div class="container clearfix">
@@ -103,7 +107,7 @@
             <div class="row">
               <div class="col-md-12 col-lg-8">
                 <h2 class="heading">Projects..</h2>
-                
+
                 <p></p>
               </div>
             </div>
@@ -113,7 +117,33 @@
               <div class="col-sm-6">
                 <h3>Hangman Game Project</h3>
                 <hr>
-                <div class="box"><a href="https://kalmaske.github.io/HangmanGame/" title="" data-toggle="lightbox" data-gallery="projects" data-title="Hangman Game "><img src="img/hangman.png" alt="" class="img-responsive"></a></div>
+                <!-- Button to Open the Modal -->
+<a href="" title=""  data-toggle="modal" data-target="#myModal" data-gallery="projects" data-title="Hangman Game "><img src="img/hangman.png" alt="" class="img-responsive"></a>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Hangman Game</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <iframe src="https://kalmaske.github.io/HangmanGame/" frameborder="0" width="100%" height="350"></iframe>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
                 <p>The game is a classic guesing game with an "Around the World" theme, where the user get to guess the country. </p>
                 <p>Hangman Game was created using HTML, Javascript, CSS, Bootstrap, and jQuery.  </p>
                 <p>This is a non-responsive website.</p>
@@ -123,7 +153,34 @@
               <div class="col-sm-6">
                   <h3>Comic Collector Project</h3>
                   <hr>
-                  <div class="box"><a href="https://secret-lake-84927.herokuapp.com/" title="" data-toggle="lightbox" data-gallery="projects" data-title="Comic Collector "><img src="img/comicCollectors.jpg" alt="" class="img-responsive"></a></div>
+                <!-- Button to Open the Modal -->
+<a href="" title=""  data-toggle="modal" data-target="#myModal2" data-gallery="projects" data-title="Comic Collector "><img src="img/comicCollectors.jpg" alt="" class="img-responsive"></a>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Comic Collector</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <iframe src="https://secret-lake-84927.herokuapp.com/" frameborder="0" width="100%" height="350"></iframe>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
                   <p>This is a Marvel Comic collector’s resource website, providing latest comics for their favorite Marvel characters.  It also provides purchase options for ebay and bookstores. </p>
                   <p>The website was created using Javascript, HTML, CSS, jQuery, eBay API, Google places API, Marvel API, Materialize, Google fonts, Firebase, Moment.js, and AJAX calls </p>
                   <a href="https://secret-lake-84927.herokuapp.com/" target="_blank">Click here to check out new marvel comic books!!</a><br>
@@ -138,52 +195,133 @@
                   <div class="row">
                       <!-- row2 of projects -->
                     <br>
-                    
+
                     <div class="col-sm-6">
                         <h3>Reading List Project</h3>
                         <hr/>
-                          <div class="box"><a href="https://intense-island-36756.herokuapp.com/" title="" data-toggle="lightbox" data-gallery="projects" data-title="Reading List "><img src="img/readinglist.png" alt="" class="img-responsive"></a></div>
+                <!-- Button to Open the Modal -->
+<a href="" title=""  data-toggle="modal" data-target="#myModal3" data-gallery="projects" data-title="Reading List "><img src="img/readinglist.png" alt="" class="img-responsive"></a>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Reading List</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <iframe src="https://intense-island-36756.herokuapp.com/" frameborder="0" width="100%" height="350"></iframe>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
                       <p>This application was built using reactJS, MONGODB, and Express. On this website a user can create his/her own "Books to Read" list and all inputs will be saved to MONGODB. A user can also delete, add, and edit the list.</p>
                       <p>This is a non-responsive website.</p>
                       <a href="https://intense-island-36756.herokuapp.com/" target="_blank">Click here to checkout my booklist!!</a><br>
                       <a href="https://github.com/kalmaske/reactRouter" target="_blank">Github Repo</a><br>
                     </div>
-      
+
                     <div class="col-sm-6">
                         <h3>Giftastic Project</h3>
                         <hr>
                           <div class="box"><a href="https://kalmaske.github.io/gifTastic/" title="" data-toggle="lightbox" data-gallery="projects" data-title="Giftastic"><iframe src="https://giphy.com/embed/1IAinwCBagEKY" width=100% height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="https://giphy.com/gifs/cat-happy-white-1IAinwCBagEKY" class="img-responsive"></a>
                             <br>
-                            
+
 
                       <p>A Web based Javascript/ HTML5 Gif fetching application that uses the GIPHY API to fetch users choice of nature GIFs. GIFs have a click to play/ stop feature when clicked.</p>
                       <!-- <p>Giphtsatic was created using GIPHY API data, HTML, CSS, and jQuery</p> -->
                       <a href="https://kalmaske.github.io/gifTastic/" target="_blank">Click here & enjoy nature Giphys!!!!</a><br>
                       <a href="https://github.com/kalmaske/gifTastic" target="_blank">Github Repo</a><br>
                     </div>
-                    
-                  </div> 
+
+                  </div>
 
                   </div>
                   <!-- end row2 of projects -->
-                  
+
                    <div class="row">
                       <!-- row3 of projects -->
                      <div class="col-sm-6">
                        <h3>Friend Finder Project</h3>
                        <hr/>
-                       <div class="box"><a href="https://shielded-retreat-32916.herokuapp.com/" title="" data-toggle="lightbox" data-gallery="projects" data-title="Friend Finder  "><img src="img/friendFinder.jpg" alt="" class="img-responsive"></a></div>
+                <!-- Button to Open the Modal -->
+<a href="" title=""  data-toggle="modal" data-target="#myModal4" data-gallery="projects" data-title="Friend Finder  "><img src="img/friendFinder.jpg" alt="" class="img-responsive"></a>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal4">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Friend Finder</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <iframe src="https://shielded-retreat-32916.herokuapp.com/" frameborder="0" width="100%" height="350"></iframe>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
                        <p>This is basically a dating application. This full-stack website will take in results from a users' 10 questions surveys, then compare their answers with those from other users.</p>
                        <p>The app will then display the name and picture of the user with the best overall match.</p>
                        <p>Used HTML, JavaScript, CSS,  express, body-parser, and path. HTML Routes, API Routes, and Server.js files </p>
                        <a href="https://shielded-retreat-32916.herokuapp.com/" target="_blank">Click here to take the survey and find friends!!</a><br>
                        <a href="https://github.com/kalmaske/FriendFinder" target="_blank">Github Repo</a><br>
                      </div>
-                     
+
                      <div class="col-sm-6">
                         <h3>Ctrsyal Collector Project</h3>
                         <hr>
-                        <div class="box"><a href="https://kalmaske.github.io/CrystalsCollectorGame/" title="" data-toggle="lightbox" data-gallery="projects" data-title="Crystal Collector "><img src="img/crystalCollectors.jpg" alt="" class="img-responsive"></a></div>
+                <!-- Button to Open the Modal -->
+<a href="" title=""  data-toggle="modal" data-target="#myModal5" data-gallery="projects" data-title="Crystal Collector "><img src="img/crystalCollectors.jpg" alt="" class="img-responsive"></a>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal5">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Ctrsyal Collector</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <iframe src="https://kalmaske.github.io/CrystalsCollectorGame/" frameborder="0" width="100%" height="350"></iframe>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
                         <p>There are four kind of crystals with random numbers every time the game starts. There is also a random number generated; when the player clicks on crystals it adds to the total the number. To win the game try to make the total number equal to the random generated number.</p>
                         <p>Crystal Collector Game was created using HTML, Javascript, CSS, Bootstrap, and jQuery.</p>
                         <p>This is a non-responsive website.</p>
@@ -191,9 +329,9 @@
                         <a href="https://github.com/kalmaske/CrystalsCollectorGame" target="_blank">Github Repo</a><br>
                       </div>
 
-                     
-                     
-                    </div> 
+
+
+                    </div>
                     <!-- end row3 of projects -->
 
                     <div class="row">
@@ -202,18 +340,72 @@
                      <div class="col-sm-6">
                        <h3>NYT Search Project</h3>
                        <hr/>
-                       <div class="box"><a href="https://kalmaske.github.io/NYT-API-Search/" title="" data-toggle="lightbox" data-gallery="projects" data-title="NYT Article Search"><img src="img/nytapi.jpg" alt="" class="img-responsive"></a></div>
+                <!-- Button to Open the Modal -->
+<a href="" title=""  data-toggle="modal" data-target="#myModal6" data-gallery="projects" data-title="NYT Article Search"><img src="img/nytapi.jpg" alt="" class="img-responsive"></a>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal6">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">NYT Article Search</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <iframe src="https://kalmaske.github.io/NYT-API-Search/" frameborder="0" width="100%" height="350"></iframe>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
                        <p>This application allows the user to search any article from the NYT archive and uses AJAX calls in order to call articles.</p>
                        <p>The user can enter his/her choice of search parameters by entering the search term, number of articles to retrieve, start year, and end year.</p>
                        <p>Used HTML, JavaScript, Fontawsome, CSS, Google Fonts, API, and AJAX calls. </p>
                        <a href="https://kalmaske.github.io/NYT-API-Search/" target="_blank">Click here to search articles!!</a><br>
                        <a href="https://github.com/kalmaske/NYT-API-Search" target="_blank">Github Repo</a><br>
                      </div>
-                     
+
                      <div class="col-sm-6">
                       <h3>NYT Scraper Project</h3>
                       <hr/>
-                     <div class="box"><a href="https://mysterious-ocean-75164.herokuapp.com/" title="" data-toggle="lightbox" data-gallery="projects" data-title="Web Scraper"><img src="img/webScraper.png" alt="" class="img-responsive"></a></div>
+                <!-- Button to Open the Modal -->
+<a href="" title=""  data-toggle="modal" data-target="#myModal7" data-gallery="projects" data-title="Web Scraper"><img src="img/webScraper.png" alt="" class="img-responsive"></a>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal7">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Web Scraper</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <iframe src="https://mysterious-ocean-75164.herokuapp.com/" frameborder="0" width="100%" height="350"></iframe>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
                      <p>The application scrapes the NYT website for new articles and adds them to a Mongo Database. There is a "scrape new articles" button for scraping. After scraping the app displays the headline, summary, and URL of the each article. </p>
                      <p>The user is ale to save articles and adds notes to them. Notes can be revised or deleted. All saved articles and comments are visible to every user.</p>
                      <p>This application was built using an express router, CSS, Bootstrap, Handlebars, and NodeJS. npm packages used: express, express-handlebars, mongoose, body-parser,  cheerio, & request.</p>
@@ -221,9 +413,9 @@
                      <a href="https://github.com/kalmaske/webScraper" target="_blank">Github Repo</a><br>
                    </div>
 
-                     
-                     
-                    </div> 
+
+
+                    </div>
                     <!-- end row4 of projects -->
 
                     <div class="row">
@@ -232,12 +424,39 @@
                      <div class="col-sm-6">
                        <h3>Trivia Game</h3>
                        <hr/>
-                       <div class="box"><a href="https://kalmaske.github.io/DisneyMovieTriviaGame/" title="" data-toggle="lightbox" data-gallery="projects" data-title="Disney Movie Trivia Game"><img src="img/trivia.png" alt="" class="img-responsive"></a></div>
+                <!-- Button to Open the Modal -->
+<a href="" title=""  data-toggle="modal" data-target="#myModal8" data-gallery="projects" data-title="Disney Movie Trivia Game"><img src="img/trivia.png" alt="" class="img-responsive"></a>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal8">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Disney Movie Trivia Game</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <iframe src="https://kalmaske.github.io/DisneyMovieTriviaGame/" frameborder="0" width="100%" height="350"></iframe>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
                        <p>This application a Disney Movie Trivia Game. The player have 10 seconds for each question and 3 seconds in between questions. If the time runs out the answer will be displayed and the page will automatically take you to the next question.</p>
                        <a href="https://kalmaske.github.io/DisneyMovieTriviaGame/" target="_blank">Click here to play !!</a><br>
                        <a href="https://github.com/kalmaske/DisneyMovieTriviaGame" target="_blank">Github Repo</a><br>
                      </div>
-                     
+
                      <!-- <div class="col-sm-6">
                       <h3>ProjectName</h3>
                       <hr/>
@@ -247,21 +466,21 @@
                       <a href="repoWebsite" target="_blank">Github Repo</a><br>
                     </div> -->
 
-            
-                    </div> 
+
+                    </div>
                     <!-- end row5 projects -->
-              
+
             <!-- </div> -->
           </div>
           <!-- col-12 end -->
         </div>
         <!-- end project row -->
-      </div> 
+      </div>
       <!-- end container -->
     </section>
 
     <!-- resume-->
-    <section id="resume" class="resume">      
+    <section id="resume" class="resume">
         <div class="container clearfix">
             <div class="row">
               <div class="col-md-12">
@@ -272,16 +491,24 @@
         </div>
     </section>
     <!-- resume end-->
-     
+
     <footer style="background-color: #111;" class="section-inverse">
-      <div class="container"> 
+      <div class="container">
         <div class="row copyright">
           <div class="col-md-6">
             <p>&copy;2017 Khadija Ali</p>
           </div>
         </div>
-      
+
     </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top d-lg-none">
+      <a class="btn btn-primary js-scroll-trigger" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
     <!-- Javascript files-->
     <!-- jQuery-->
     <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
