@@ -1,4 +1,4 @@
-/* IDRViewer - v1.7.0 */
+/* IDRViewer - v1.8.2 */
 
 /* Layout Styles */
 .page {
@@ -9,9 +9,8 @@
 
 .page-inner {
     -webkit-transform-origin: top left;
-    -moz-transform-origin: top left;
-    -o-transform-origin: top left;
     -ms-transform-origin: top left;
+    transform-origin: top left;
 }
 
 #idrviewer {
