@@ -1,0 +1,9 @@
+{"pages":[{"page":1,"annotations":[{"type":"Link","bounds":[203,99,180,20],"objref":"12"},
+{"type":"Link","bounds":[416,80,196,20],"objref":"11"},
+{"type":"Link","bounds":[239,562,206,25],"objref":"28"},
+{"type":"Link","bounds":[466,99,333,20],"objref":"13"}]},{"page":2,"annotations":[{"type":"Link","bounds":[203,99,180,20],"objref":"37"},
+{"type":"Link","bounds":[416,80,196,20],"objref":"36"},
+{"type":"Link","bounds":[466,99,333,20],"objref":"38"}]},{"page":3,"annotations":[{"type":"Link","bounds":[203,99,180,20],"objref":"42"},
+{"type":"Link","bounds":[416,80,196,20],"objref":"41"},
+{"type":"Link","bounds":[287,280,206,26],"objref":"44"},
+{"type":"Link","bounds":[466,99,333,20],"objref":"43"}]}]}

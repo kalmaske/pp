@@ -12,16 +12,12 @@
 <!-- Begin shared CSS values -->
 <style class="shared-css" type="text/css" >
 .t {
-	-webkit-transform-origin: bottom left;
-	-ms-transform-origin: bottom left;
 	transform-origin: bottom left;
-	-webkit-transform: scale(0.25);
-	-ms-transform: scale(0.25);
-	transform: scale(0.25);
 	z-index: 2;
 	position: absolute;
 	white-space: pre;
 	overflow: visible;
+	line-height: 1.5;
 }
 </style>
 <!-- End shared CSS values -->
@@ -30,139 +26,81 @@
 <!-- Begin inline CSS -->
 <style type="text/css" >
 
-#t1_2{left:378px;bottom:1132px;letter-spacing:-0.1px;word-spacing:-0.4px;}
-#t2_2{left:304px;bottom:1111px;}
-#t3_2{left:214px;bottom:1092px;letter-spacing:-0.1px;}
-#t4_2{left:266px;bottom:1092px;letter-spacing:-0.1px;}
-#t5_2{left:459px;bottom:1092px;letter-spacing:-0.1px;word-spacing:0.1px;}
-#t6_2{left:547px;bottom:1092px;letter-spacing:-0.1px;}
-#t7_2{left:135px;bottom:1073px;}
-#t8_2{left:194px;bottom:1073px;letter-spacing:-0.1px;}
-#t9_2{left:386px;bottom:1073px;letter-spacing:-0.1px;word-spacing:0.1px;}
-#ta_2{left:474px;bottom:1073px;letter-spacing:-0.1px;}
-#tb_2{left:110px;bottom:1032px;}
-#tc_2{left:109px;bottom:991px;}
-#td_2{left:701px;bottom:991px;}
-#te_2{left:138px;bottom:949px;}
-#tf_2{left:165px;bottom:949px;word-spacing:0.1px;}
-#tg_2{left:165px;bottom:929px;}
-#th_2{left:165px;bottom:908px;}
-#ti_2{left:157px;bottom:887px;}
-#tj_2{left:186px;bottom:861px;}
-#tk_2{left:213px;bottom:861px;word-spacing:0.1px;}
-#tl_2{left:186px;bottom:835px;}
-#tm_2{left:213px;bottom:835px;}
-#tn_2{left:186px;bottom:808px;}
-#to_2{left:213px;bottom:808px;}
-#tp_2{left:157px;bottom:785px;}
-#tq_2{left:186px;bottom:758px;}
-#tr_2{left:213px;bottom:758px;word-spacing:0.1px;}
-#ts_2{left:186px;bottom:732px;}
-#tt_2{left:213px;bottom:732px;}
-#tu_2{left:157px;bottom:708px;}
-#tv_2{left:186px;bottom:684px;}
-#tw_2{left:213px;bottom:684px;word-spacing:-0.2px;}
-#tx_2{left:186px;bottom:659px;}
-#ty_2{left:213px;bottom:659px;}
-#tz_2{left:109px;bottom:591px;}
-#t10_2{left:729px;bottom:591px;}
-#t11_2{left:138px;bottom:549px;}
-#t12_2{left:165px;bottom:549px;}
-#t13_2{left:157px;bottom:505px;}
-#t14_2{left:186px;bottom:479px;}
-#t15_2{left:213px;bottom:479px;word-spacing:-0.1px;}
-#t16_2{left:186px;bottom:452px;}
-#t17_2{left:213px;bottom:452px;word-spacing:-0.2px;}
-#t18_2{left:157px;bottom:429px;}
-#t19_2{left:186px;bottom:402px;}
-#t1a_2{left:213px;bottom:402px;letter-spacing:0.1px;}
-#t1b_2{left:291px;bottom:402px;}
-#t1c_2{left:157px;bottom:378px;}
-#t1d_2{left:186px;bottom:354px;}
-#t1e_2{left:213px;bottom:354px;word-spacing:-0.2px;}
-#t1f_2{left:186px;bottom:330px;}
-#t1g_2{left:213px;bottom:330px;word-spacing:0.1px;}
-#t1h_2{left:109px;bottom:258px;}
-#t1i_2{left:752px;bottom:258px;}
-#t1j_2{left:138px;bottom:217px;}
-#t1k_2{left:165px;bottom:217px;word-spacing:-0.1px;}
-#t1l_2{left:556px;bottom:217px;}
-#t1m_2{left:165px;bottom:196px;}
-#t1n_2{left:165px;bottom:175px;}
-#t1o_2{left:165px;bottom:155px;}
+#t1_2{left:361px;bottom:1127px;letter-spacing:-0.19px;word-spacing:-0.15px;}
+#t2_2{left:210px;bottom:1107px;letter-spacing:0.15px;word-spacing:-0.01px;}
+#t3_2{left:367px;bottom:1107px;letter-spacing:-0.09px;}
+#t4_2{left:419px;bottom:1107px;letter-spacing:-0.08px;}
+#t5_2{left:612px;bottom:1107px;letter-spacing:0.14px;}
+#t6_2{left:140px;bottom:1088px;letter-spacing:-0.05px;}
+#t7_2{left:207px;bottom:1088px;letter-spacing:-0.09px;}
+#t8_2{left:381px;bottom:1088px;letter-spacing:-0.07px;word-spacing:0.02px;}
+#t9_2{left:470px;bottom:1088px;letter-spacing:-0.09px;}
+#ta_2{left:110px;bottom:1028px;letter-spacing:0.21px;word-spacing:-0.01px;}
+#tb_2{left:107px;bottom:986px;letter-spacing:0.15px;word-spacing:-0.02px;}
+#tc_2{left:692px;bottom:986px;letter-spacing:0.14px;}
+#td_2{left:138px;bottom:963px;}
+#te_2{left:165px;bottom:963px;letter-spacing:0.13px;}
+#tf_2{left:165px;bottom:943px;letter-spacing:0.13px;word-spacing:0.02px;}
+#tg_2{left:155px;bottom:922px;letter-spacing:0.13px;}
+#th_2{left:186px;bottom:896px;}
+#ti_2{left:213px;bottom:896px;letter-spacing:0.15px;word-spacing:-0.1px;}
+#tj_2{left:186px;bottom:869px;}
+#tk_2{left:213px;bottom:869px;letter-spacing:0.13px;word-spacing:0.01px;}
+#tl_2{left:213px;bottom:846px;letter-spacing:0.13px;}
+#tm_2{left:186px;bottom:819px;}
+#tn_2{left:213px;bottom:819px;letter-spacing:0.14px;word-spacing:-0.02px;}
+#to_2{left:213px;bottom:796px;letter-spacing:0.14px;word-spacing:-0.04px;}
+#tp_2{left:213px;bottom:772px;letter-spacing:0.15px;word-spacing:0.02px;}
+#tq_2{left:155px;bottom:748px;letter-spacing:0.16px;}
+#tr_2{left:186px;bottom:722px;}
+#ts_2{left:213px;bottom:722px;letter-spacing:0.13px;}
+#tt_2{left:186px;bottom:695px;}
+#tu_2{left:213px;bottom:695px;letter-spacing:0.13px;word-spacing:-0.02px;}
+#tv_2{left:107px;bottom:651px;letter-spacing:0.15px;word-spacing:0.03px;}
+#tw_2{left:704px;bottom:651px;letter-spacing:0.15px;}
+#tx_2{left:131px;bottom:630px;}
+#ty_2{left:158px;bottom:630px;letter-spacing:0.13px;word-spacing:-0.01px;}
+#tz_2{left:158px;bottom:606px;letter-spacing:0.13px;}
+#t10_2{left:158px;bottom:582px;letter-spacing:0.14px;word-spacing:-0.01px;}
+#t11_2{left:155px;bottom:559px;letter-spacing:0.13px;}
+#t12_2{left:186px;bottom:532px;}
+#t13_2{left:213px;bottom:532px;letter-spacing:0.13px;word-spacing:-0.02px;}
+#t14_2{left:186px;bottom:506px;}
+#t15_2{left:213px;bottom:506px;letter-spacing:0.14px;word-spacing:-0.04px;}
+#t16_2{left:213px;bottom:482px;letter-spacing:0.13px;word-spacing:-0.01px;}
+#t17_2{left:155px;bottom:458px;letter-spacing:0.16px;}
+#t18_2{left:186px;bottom:432px;}
+#t19_2{left:213px;bottom:432px;letter-spacing:0.13px;}
+#t1a_2{left:107px;bottom:388px;letter-spacing:0.15px;word-spacing:0.01px;}
+#t1b_2{left:704px;bottom:388px;letter-spacing:0.14px;}
+#t1c_2{left:138px;bottom:366px;}
+#t1d_2{left:165px;bottom:366px;letter-spacing:0.16px;word-spacing:-0.04px;}
+#t1e_2{left:165px;bottom:346px;letter-spacing:0.13px;}
+#t1f_2{left:165px;bottom:325px;letter-spacing:0.13px;word-spacing:-0.01px;}
+#t1g_2{left:165px;bottom:304px;letter-spacing:0.13px;}
+#t1h_2{left:376px;bottom:304px;letter-spacing:0.14px;word-spacing:-0.01px;}
+#t1i_2{left:155px;bottom:284px;letter-spacing:0.13px;}
+#t1j_2{left:186px;bottom:257px;}
+#t1k_2{left:213px;bottom:257px;letter-spacing:0.14px;}
+#t1l_2{left:186px;bottom:231px;}
+#t1m_2{left:213px;bottom:231px;letter-spacing:0.14px;}
+#t1n_2{left:186px;bottom:205px;}
+#t1o_2{left:213px;bottom:205px;letter-spacing:0.14px;word-spacing:-0.01px;}
+#t1p_2{left:155px;bottom:181px;letter-spacing:0.16px;}
+#t1q_2{left:186px;bottom:155px;}
+#t1r_2{left:213px;bottom:155px;letter-spacing:0.13px;word-spacing:-0.02px;}
+#t1s_2{left:186px;bottom:128px;}
+#t1t_2{left:213px;bottom:128px;letter-spacing:0.14px;}
 
-.s1_2{
-	FONT-SIZE: 90.4px;
-	FONT-FAMILY: Garamond-Bold_5;
-	color: rgb(0,0,0);
-}
-
-.s2_2{
-	FONT-SIZE: 73.3px;
-	FONT-FAMILY: Garamond_9;
-	color: rgb(0,0,0);
-}
-
-.s3_2{
-	FONT-SIZE: 67.5px;
-	FONT-FAMILY: Garamond_9;
-	color: rgb(0,0,0);
-}
-
-.s4_2{
-	FONT-SIZE: 67.5px;
-	FONT-FAMILY: Garamond_9;
-	color: rgb(5,99,193);
-}
-
-.s5_2{
-	FONT-SIZE: 73.3px;
-	FONT-FAMILY: Garamond-Bold_5;
-	color: rgb(0,0,0);
-}
-
-.s6_2{
-	FONT-SIZE: 77.3px;
-	FONT-FAMILY: Garamond-Bold_5;
-	color: rgb(0,0,0);
-}
-
-.s7_2{
-	FONT-SIZE: 73.3px;
-	FONT-FAMILY: Wingdings-Regular_j;
-	color: rgb(0,0,0);
-}
-
-.s8_2{
-	FONT-SIZE: 73.3px;
-	FONT-FAMILY: SymbolMT_q;
-	color: rgb(0,0,0);
-}
-
-.s9_2{
-	FONT-SIZE: 73.3px;
-	FONT-FAMILY: Garamond-Italic_12;
-	color: rgb(0,0,0);
-}
-
-.s10_2{
-	FONT-SIZE: 73.3px;
-	FONT-FAMILY: Garamond_9;
-	color: rgb(5,99,193);
-}
-
-.t.m0_2{
-	-webkit-transform: matrix(0.95,0,-0.32,0.95,0, 0) scale(0.25);
-	-ms-transform: matrix(0.95,0,-0.32,0.95,0, 0) scale(0.25);
-	transform: matrix(0.95,0,-0.32,0.95,0, 0) scale(0.25);
-}
-
-#form1_2{	z-index: 2;	border-style: none;	padding: 0px;	position: absolute;	left: 191px;	top: 119px;	width: 185px;	height: 19px;	text-align: left;	background: transparent;	font: normal 13px Arial, Helvetica, sans-serif;}
-#form2_2{	z-index: 2;	border-style: none;	padding: 0px;	position: absolute;	left: 544px;	top: 99px;	width: 180px;	height: 20px;	text-align: left;	background: transparent;	font: normal 15px Arial, Helvetica, sans-serif;}
-#form3_2{	z-index: 2;	border-style: none;	padding: 0px;	position: absolute;	left: 263px;	top: 99px;	width: 196px;	height: 20px;	text-align: left;	background: transparent;	font: normal 15px Arial, Helvetica, sans-serif;}
-#form4_2{	z-index: 2;	border-style: none;	padding: 0px;	position: absolute;	left: 287px;	top: 785px;	width: 206px;	height: 26px;	text-align: left;	background: transparent;	font: normal 19px Arial, Helvetica, sans-serif;}
-#form5_2{	z-index: 2;	border-style: none;	padding: 0px;	position: absolute;	left: 471px;	top: 119px;	width: 333px;	height: 19px;	text-align: left;	background: transparent;	font: normal 13px Arial, Helvetica, sans-serif;}
-
+.s1_2{font-size:23px;font-family:Garamond-Bold_5p;color:#000;}
+.s2_2{font-size:18px;font-family:Garamond_5r;color:#000;}
+.s3_2{font-size:17px;font-family:Garamond_5r;color:#000;}
+.s4_2{font-size:17px;font-family:Garamond_5r;color:#0563C1;}
+.s5_2{font-size:18px;font-family:Garamond-Bold_5p;color:#000;}
+.s6_2{font-size:19px;font-family:Garamond-Bold_5p;color:#000;}
+.s7_2{font-size:18px;font-family:SymbolMT_5z;color:#000;}
+.s8_2{font-size:18px;font-family:Wingdings-Regular_5v;color:#000;}
+.t.m0_2{transform:matrix(0.95,0,-0.32,0.95,0,0);}
 </style>
 <!-- End inline CSS -->
 
@@ -170,28 +108,23 @@
 <style id="fonts2" type="text/css" >
 
 @font-face {
-	font-family: Garamond-Bold_5;
-	src: url("fonts/Garamond-Bold_5.woff") format("woff");
+	font-family: Garamond-Bold_5p;
+	src: url("fonts/Garamond-Bold_5p.woff") format("woff");
 }
 
 @font-face {
-	font-family: Garamond-Italic_12;
-	src: url("fonts/Garamond-Italic_12.woff") format("woff");
+	font-family: Garamond_5r;
+	src: url("fonts/Garamond_5r.woff") format("woff");
 }
 
 @font-face {
-	font-family: Garamond_9;
-	src: url("fonts/Garamond_9.woff") format("woff");
+	font-family: SymbolMT_5z;
+	src: url("fonts/SymbolMT_5z.woff") format("woff");
 }
 
 @font-face {
-	font-family: SymbolMT_q;
-	src: url("fonts/SymbolMT_q.woff") format("woff");
-}
-
-@font-face {
-	font-family: Wingdings-Regular_j;
-	src: url("fonts/Wingdings-Regular_j.woff") format("woff");
+	font-family: Wingdings-Regular_5v;
+	src: url("fonts/Wingdings-Regular_5v.woff") format("woff");
 }
 
 </style>
@@ -204,80 +137,74 @@
 
 
 <!-- Begin text definitions (Positioned/styled in CSS) -->
-<div id="t1_2" class="t m0_2 s1_2">Khadija Almaskeen </div>
-<div id="t2_2" class="t s2_2">+966 54 860 0705 || Dammam, Saudi Arabia </div>
+<div id="t1_2" class="t m0_2 s1_2">Khadija Ali Almaskeen </div>
+<div id="t2_2" class="t s2_2">+966 54 860 0705 || </div>
 <div id="t3_2" class="t s3_2">E-mail: </div>
 <div id="t4_2" class="t s4_2">khadija.maskeen@gmail.com </div>
-<div id="t5_2" class="t s3_2">|| Portfolio: </div>
-<div id="t6_2" class="t s4_2">http://khadijamaskeen.net </div>
-<div id="t7_2" class="t s3_2">GitHub: </div>
-<div id="t8_2" class="t s4_2">www.github.com/kalmaske </div>
-<div id="t9_2" class="t s3_2">|| LinkedIn: </div>
-<div id="ta_2" class="t s4_2">https://www.linkedin.com/in/khadijaalmaskeen/ </div>
-<div id="tb_2" class="t s5_2">PROJECTS &amp; EXPERIENCE </div>
-<div id="tc_2" class="t m0_2 s6_2">TAQADAM Startup Acceleration </div>
-<div id="td_2" class="t s5_2">September 2018 </div>
-<div id="te_2" class="t s7_2">▪</div>
-<div id="tf_2" class="t s2_2">TAQADAM is a KAUST / SABB bank sponsored startup accelerator program. It is </div>
-<div id="tg_2" class="t s2_2">designed to help participants execute their business models, deliver valuable products or </div>
-<div id="th_2" class="t s2_2">services, and create local jobs. I participated in a team of three entrepreneurs. </div>
-<div id="ti_2" class="t m0_2 s6_2">Responsibilities: </div>
-<div id="tj_2" class="t s8_2">•</div>
-<div id="tk_2" class="t s2_2">Attending marketing workshops such as branding and digital marketing </div>
-<div id="tl_2" class="t s8_2">•</div>
-<div id="tm_2" class="t s2_2">Attending a finance workshop </div>
-<div id="tn_2" class="t s8_2">•</div>
-<div id="to_2" class="t s2_2">Team-work such as making decisions and building a start-up company from A to Z </div>
-<div id="tp_2" class="t m0_2 s6_2">Accomplishments: </div>
-<div id="tq_2" class="t s8_2">•</div>
-<div id="tr_2" class="t s2_2">Created a front-end design for a start-up company website </div>
-<div id="ts_2" class="t s8_2">•</div>
-<div id="tt_2" class="t s2_2">Supervised the back-end development of the company website </div>
-<div id="tu_2" class="t m0_2 s6_2">Technologies Used: </div>
-<div id="tv_2" class="t s7_2">➢</div>
-<div id="tw_2" class="t s9_2">Front-end: Materialize, CSS, HTML</div>
-<div id="tx_2" class="t s7_2">➢</div>
-<div id="ty_2" class="t s9_2">Back-end: JavaScript, jQuery, Google Fonts, SQL </div>
-<div id="tz_2" class="t m0_2 s6_2">PERSONAL PORTFOLIO</div>
-<div id="t10_2" class="t s5_2">August 2017 </div>
-<div id="t11_2" class="t s7_2">▪</div>
-<div id="t12_2" class="t s2_2">Created my own website listing all web development projects and showing all </div>
-<div id="t13_2" class="t m0_2 s6_2">Responsibilities: </div>
-<div id="t14_2" class="t s8_2">•</div>
-<div id="t15_2" class="t s2_2">Full stack developing all projects (Front-end and Back-end) </div>
-<div id="t16_2" class="t s8_2">•</div>
-<div id="t17_2" class="t s2_2">Updating the website constantly </div>
-<div id="t18_2" class="t m0_2 s6_2">Accomplishments: </div>
-<div id="t19_2" class="t s8_2">•</div>
-<div id="t1a_2" class="t s2_2">Deployed: </div>
-<div id="t1b_2" class="t s10_2">http://khadijamaskeen.net/ </div>
-<div id="t1c_2" class="t m0_2 s6_2">Technologies Used: </div>
-<div id="t1d_2" class="t s7_2">➢</div>
-<div id="t1e_2" class="t s9_2">Front-end: Materialize, CSS, HTML</div>
-<div id="t1f_2" class="t s7_2">➢</div>
-<div id="t1g_2" class="t s9_2">Back-end: APIs, JavaScript, jQuery, AJAX calls, Google Fonts, Moment.js, &amp; GitHub </div>
-<div id="t1h_2" class="t m0_2 s6_2">SENIOR YEAR PROJECT</div>
-<div id="t1i_2" class="t s5_2">May 2016 </div>
-<div id="t1j_2" class="t s7_2">▪</div>
-<div id="t1k_2" class="t s2_2">The project was creating a noise monitoring device for </div>
-<div id="t1l_2" class="t m0_2 s6_2">The Hartford Insurance Company</div>
-<div id="t1m_2" class="t s2_2">to be used by workers who are exposed to various noise levels in factories. Dangerous noise </div>
-<div id="t1n_2" class="t s2_2">levels are logged on the device and pushed to a cloud base server for review. The </div>
-<div id="t1o_2" class="t s2_2">Information logged is used to improve worker safety &amp; health programs. </div>
+<div id="t5_2" class="t s2_2">|| Saudi Arabia</div>
+<div id="t6_2" class="t s3_2">Portfolio: </div>
+<div id="t7_2" class="t s4_2">http://khadijamaskeen.net</div>
+<div id="t8_2" class="t s3_2">|| LinkedIn: </div>
+<div id="t9_2" class="t s4_2">https://www.linkedin.com/in/khadijaalmaskeen/ </div>
+<div id="ta_2" class="t s5_2">PROJECTS &amp; EXPERIENCE </div>
+<div id="tb_2" class="t m0_2 s6_2">Saferoad Information Technology Co. </div>
+<div id="tc_2" class="t s5_2">Current Position </div>
+<div id="td_2" class="t s7_2">•</div>
+<div id="te_2" class="t s2_2">As a business developer at Saferoad Information Technology; I’ve worked in in more than </div>
+<div id="tf_2" class="t s2_2">one field which gave me a strong insight </div>
+<div id="tg_2" class="t m0_2 s6_2">Responsibilities: </div>
+<div id="th_2" class="t s7_2">•</div>
+<div id="ti_2" class="t s2_2">System Training &amp; Troubleshooting (Saferoad track system) </div>
+<div id="tj_2" class="t s7_2">•</div>
+<div id="tk_2" class="t s2_2">A Client Account Manager working with the operations department as a customer </div>
+<div id="tl_2" class="t s2_2">support in order to manage user’s accounts and training clients </div>
+<div id="tm_2" class="t s7_2">•</div>
+<div id="tn_2" class="t s2_2">Digital Marketing; I worked with WordPress in order to post news and events on the </div>
+<div id="to_2" class="t s2_2">company’s website. Also worked with email campaigns and social media posts using </div>
+<div id="tp_2" class="t s2_2">Zoho social &amp; CRM </div>
+<div id="tq_2" class="t m0_2 s6_2">Accomplishments: </div>
+<div id="tr_2" class="t s7_2">•</div>
+<div id="ts_2" class="t s2_2">Done a “lighthouse project” for the marketing department </div>
+<div id="tt_2" class="t s7_2">•</div>
+<div id="tu_2" class="t s2_2">Got a few appreciation letters from companies that I’ve trained </div>
+<div id="tv_2" class="t m0_2 s6_2">Amutlaq Real Estate Investment Company </div>
+<div id="tw_2" class="t s5_2">November 2019 </div>
+<div id="tx_2" class="t s8_2">▪</div>
+<div id="ty_2" class="t s2_2">As a customer relation officer at AREIC; I was the connection point for the customer, </div>
+<div id="tz_2" class="t s2_2">tenants, &amp; management. I worked in leasing &amp; marketing which taught me my business </div>
+<div id="t10_2" class="t s2_2">communication skills. </div>
+<div id="t11_2" class="t m0_2 s6_2">Responsibilities: </div>
+<div id="t12_2" class="t s7_2">•</div>
+<div id="t13_2" class="t s2_2">Marketing for advertising tools &amp; Leasing </div>
+<div id="t14_2" class="t s7_2">•</div>
+<div id="t15_2" class="t s2_2">Event planning and preparing letters and forms for the Royal Commission for Jubail </div>
+<div id="t16_2" class="t s2_2">&amp; Yanbu in order to get permissions for events held </div>
+<div id="t17_2" class="t m0_2 s6_2">Accomplishments: </div>
+<div id="t18_2" class="t s7_2">•</div>
+<div id="t19_2" class="t s2_2">Reached the company’s yearly financial goal for marketing tools in 8 months </div>
+<div id="t1a_2" class="t m0_2 s6_2">TAQADAM Startup Acceleration </div>
+<div id="t1b_2" class="t s5_2">September 2018 </div>
+<div id="t1c_2" class="t s8_2">▪</div>
+<div id="t1d_2" class="t s2_2">TAQADAM is a King Abdulaziz University of Science and Technology (KAUST)/SABB </div>
+<div id="t1e_2" class="t s2_2">Bank-sponsored startup accelerator program. It is designed to help participants execute their </div>
+<div id="t1f_2" class="t s2_2">business models, deliver valuable products or services, and create local jobs. I am one of a </div>
+<div id="t1g_2" class="t s2_2">team of three entrepreneurs. </div>
+<div id="t1h_2" class="t s2_2">Our idea is one of ten out of hundreds selected by KAUST. </div>
+<div id="t1i_2" class="t m0_2 s6_2">Responsibilities: </div>
+<div id="t1j_2" class="t s7_2">•</div>
+<div id="t1k_2" class="t s2_2">Attending marketing workshops such as Branding and Digital Marketing </div>
+<div id="t1l_2" class="t s7_2">•</div>
+<div id="t1m_2" class="t s2_2">Attending a Finance Workshop </div>
+<div id="t1n_2" class="t s7_2">•</div>
+<div id="t1o_2" class="t s2_2">Team-work such as Decision-Making and Building a Start-up Company from A to Z </div>
+<div id="t1p_2" class="t m0_2 s6_2">Accomplishments: </div>
+<div id="t1q_2" class="t s7_2">•</div>
+<div id="t1r_2" class="t s2_2">Created a front-end design for a start-up company website </div>
+<div id="t1s_2" class="t s7_2">•</div>
+<div id="t1t_2" class="t s2_2">Supervised the back-end development of the company website </div>
 
 <!-- End text definitions -->
 
-
-<!-- Begin Form Data -->
-<form>
-<input id="form1_2" type="button" tabindex="7" data-objref="38 0 R"/>
-<input id="form2_2" type="button" tabindex="6" data-objref="37 0 R"/>
-<input id="form3_2" type="button" tabindex="5" data-objref="36 0 R"/>
-<input id="form4_2" type="button" tabindex="9" data-objref="42 0 R"/>
-<input id="form5_2" type="button" tabindex="8" data-objref="39 0 R"/>
-
-</form>
-<!-- End Form Data -->
 
 </div>
 </body>
